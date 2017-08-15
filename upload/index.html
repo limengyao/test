@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+    <meta content="yes" name="apple-mobile-web-app-capable" /> 
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+    <meta content="telephone=no" name="format-detection" /> 
+    <title>欢迎下载51Talk App</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body data-init="" class="">
+    <div class="up-img">
+        <p class="up-img-text">请上传相关图片(最多三张)</p>
+        <ul class="img-box cfix">
+            <li>
+                <input type="file" class="file_upload" accept="image/png,image/jpg" img-n="0">
+                <img src="image/add.png">
+            </li>
+            <li class="disnone">
+                <input type="file" class="file_upload" accept="image/png,image/jpg" img-n="1">
+                <img src="image/add.png">
+            </li>
+            <li class="disnone">
+                <input type="file" class="file_upload" accept="image/png,image/jpg" img-n="2">
+                <img src="image/add.png">
+            </li>
+        </ul>
+    </div>   
+    <div class="null"></div>
+    <div class="sub-btn cfix">
+        <p class="left js-sub" ajax-url="" go-url="">提交</p>
+        <p class="right js-sub-new" ajax-url="" go-url="">提交并创建下一条</p>
+    </div> 
+    <input type="hidden" value="image/add.png" class="nullImg">
+<!-- loading -->
+<div id="fontSizeLoding">
+    <img src="image/eff_loading.gif">
+</div>
+<script type="text/javascript">
+window.onload = function(){
+    document.documentElement.style.fontSize = document.body.clientWidth / 7.5 + "px";
+    document.getElementById("fontSizeLoding").style.display = "none";
+}
+</script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+@charset "utf-8";
+/*!
+ * http://www.51Talk.com
+ * copyright (c) 2015 51Talk
+ * author: 
+ */
+/*
+* 默认样式
+* @file：   base.less
+* @author:  zhuning@51talk.com）
+* @update:  2015-10-29
+* @note:    重置样式、通用变量、基础样式、功能样式、混合样式
+*/
+html {
+  font-size: 62.5%;
+  -webkit-user-select: none;
+}
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94%;
+  }
+}
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109%;
+  }
+}
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125%;
+  }
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+em {
+  font-weight: normal;
+  font-style: normal;
+}
+input,
+button,
+select,
+textarea,
+dl,
+dd,
+dt {
+  font-family: "Microsoft YaHei";
+  outline: none;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 0;
+  padding: 0px;
+  margin: 0px;
+}
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+img {
+  vertical-align: middle;
+}
+b {
+  font-weight: normal;
+}
+::-moz-selection {
+  background-color: #ff8200;
+  color: white;
+  text-shadow: none;
+}
+::selection {
+  background-color: #ff8200;
+  color: white;
+  text-shadow: none;
+}
+strong {
+  font-weight: normal;
+}
+html {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  font: 14px/1.5 "Microsoft YaHei";
+  color: #646464;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cfix:after {
+  content: ".";
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.cfix {
+  *zoom: 1;
+}
+.center-left-fn {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.center-top-fn {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.center-fn {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.bg-fff {
+  background-color: #fff;
+}
+.bg-f5 {
+  background-color: #f5f5f5;
+}
+.bg-f6 {
+  background-color: #f6f6f6;
+}
+.disselect-fn {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.tc {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -webkit-text-align-last: justify;
+  /*chrome 20+*/
+}
+.plr10 {
+  padding: 0 10px;
+}
+body .pb100 {
+  padding-bottom: 100px;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select {
+  -webkit-appearance: none;
+}
+body {
+  font-family: Arial, "Microsoft YaHei";
+}
+input,
+button,
+select,
+textarea,
+dl,
+dd,
+dt {
+  font-family: Arial, "Microsoft YaHei";
+}
+.disnone {
+  display: none;
+}
+#fontSizeLoding {
+  width: 100%;
+  min-height: 100%;
+  max-width: 640px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#fontSizeLoding img {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+body {
+  background: #f8f8f8;
+  padding-top: 0.2rem;
+  height: auto;
+  min-height: 100%;
+}
+body .inter-mes {
+  margin-bottom: 0.35rem;
+}
+body .inter-mes li {
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  position: relative;
+  background: #fff;
+}
+body .inter-mes li a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+body .inter-mes li .title {
+  width: 1.7rem;
+  padding-left: 0.28rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  color: #333333;
+}
+body .inter-mes li .content {
+  color: #ccc;
+  float: left;
+}
+body .inter-mes li .color {
+  color: #333;
+}
+body .inter-mes li input {
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+  padding: 0.2rem 0;
+  color: #333;
+  width: 4.5rem;
+  float: left;
+}
+body .inter-mes li input::-webkit-input-placeholder {
+  color: #ccc;
+}
+body .inter-mes li textarea {
+  width: 5rem;
+  height: 2rem;
+  resize: none;
+  background: #f8f8f8;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.3rem;
+  padding: 0.05rem;
+}
+body .inter-mes li textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+body .inter-mes li .icon {
+  width: 0.12rem;
+  height: 0.18rem;
+  float: right;
+  margin-left: 0.45rem;
+  background: url("image/icon.png") no-repeat;
+  background-size: 0.12rem 0.18rem;
+  margin-right: 0.45rem;
+  margin-top: 0.3rem;
+}
+body .inter-mes li .num {
+  padding-right: 0.3rem;
+  color: #333;
+  float: right;
+  quotes: ;
+}
+body .inter-mes .show-write {
+  padding-left: 1.7rem;
+}
+body .text-title {
+  font-size: 0.24rem;
+  padding: 0rem 0 0.1rem 0.2rem;
+  color: #999999;
+}
+body .up-img {
+  background: #fff;
+  padding: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+body .up-img .up-img-text {
+  font-size: 0.3rem;
+  color: #333;
+  padding-bottom: 0.25rem;
+}
+body .up-img .img-box li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 10px;
+  float: left;
+  margin-right: 0.2rem;
+  position: relative;
+}
+body .up-img .img-box li input {
+  position: absolute;
+  height: 1.2rem;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 1.2rem;
+}
+body .up-img .img-box li img {
+  width: 100%;
+  height: 100%;
+}
+body .up-img .img-box li span {
+  position: absolute;
+  display: block;
+  width: 0.38rem;
+  height: 0.38rem;
+  background: url("image/delet.png") no-repeat;
+  background-size: 0.38rem 0.38rem;
+  right: -0.16rem;
+  top: -0.16rem;
+}
+body .null {
+  height: 1.0rem;
+}
+body .sub-btn {
+  width: 100%;
+  max-width: 640px;
+  padding: 0.2rem 0 0.2rem 0.25rem;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ededed;
+  background: #fff;
+}
+body .sub-btn p {
+  line-height: 0.9rem;
+  height: 0.9rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  border-radius: 999px;
+  width: 3.4rem;
+  float: left;
+}
+body .sub-btn .left {
+  background: #b1b1b1;
+  margin-right: 0.2rem;
+}
+body .sub-btn .right {
+  background: #55cb42;
+}
+body .show-pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  max-width: 640px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+body .show-pop ul {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  z-index: 10;
+}
+body .show-pop ul li {
+  line-height: 1rem;
+  height: 1rem;
+  padding: 0 0.4rem;
+  text-align: center;
+  font-size: 0.32rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+body .show-pop ul li:first-child {
+  color: #ff9c29;
+  position: relative;
+}
+body .show-pop ul li span {
+  color: #333;
+  position: absolute;
+  left: 0.4rem;
+}
+body .disnone {
+  display: none;
+}
